@@ -13,8 +13,6 @@ export default function Home() {
       <Head>
         <title>Metaverse Challenge</title>
         <link rel="icon" href="/favicon.ico" />
-        <script src="three.r119.min.js"></script>
-        <script src="vanta.waves.min.js"></script>
       </Head>
 
       <div className="max-w-screen-2xl mx-auto">
