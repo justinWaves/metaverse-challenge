@@ -7,8 +7,8 @@ function SendMessage({ endOfMessagesRef }) {
 
   const sendMessage = (e) => {
     e.preventDefault();
-
     if (!message) return;
+
     const Messages = Moralis.Object.extend("Messages");
     const messages = new Messages();
 
@@ -35,7 +35,7 @@ function SendMessage({ endOfMessagesRef }) {
   };
 
   return (
-    <form className="flex fixed bottom-10 bg-black opacity-80 w-11/12 px-6 py-4 max-w-2xl shadow-xl rounded-full border-4 border-blue-400 ">
+    <form className="flex fixed bottom-10 bg-black opacity-80 w-11/12 px-6 py-4 max-w-2xl shadow-xl rounded-full border-4 border-emerald-700 ">
       <input
         className="flex-grow outline-none bg-transparent text-white placeholder-gray-500 pr-5"
         type="text"
@@ -46,7 +46,7 @@ function SendMessage({ endOfMessagesRef }) {
       <button
         type="submit"
         onClick={sendMessage}
-        className="font-bold text-pink-500"
+        className="font-bold text-white"
       >
         Send
       </button>

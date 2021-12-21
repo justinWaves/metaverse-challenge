@@ -9,10 +9,12 @@ export default function Home() {
 
   if (!isAuthenticated) return <Login />;
   return (
-    <div className="h-screen overflow-y-scroll bg-gradient-to-b from-black to-fuchsia-900">
+    <div className="h-screen overflow-y-scroll bg-gradient-to-b from-black to-zinc-900">
       <Head>
         <title>Metaverse Challenge</title>
         <link rel="icon" href="/favicon.ico" />
+        <script src="three.r119.min.js"></script>
+        <script src="vanta.waves.min.js"></script>
       </Head>
 
       <div className="max-w-screen-2xl mx-auto">

@@ -3,12 +3,12 @@ import { ByMoralis, useMoralis, useMoralisQuery } from "react-moralis";
 import Message from "./Message";
 import SendMessage from "./SendMessage";
 
-const MINS_DURATION = 30;
+const MINS_DURATION = 1440;
 
 function Messages() {
   const { user } = useMoralis();
   const endOfMessagesRef = useRef(null);
-  const { data, loading, error } = useMoralisQuery(
+  const { data } = useMoralisQuery(
     "Messages",
     (query) =>
       query
